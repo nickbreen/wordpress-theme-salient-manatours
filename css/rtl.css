@@ -1,0 +1,228 @@
+
+body{direction:rtl;unicode-bidi:embed;}
+code,pre{direction:ltr; text-align: left;}
+.row{direction:ltr; text-align: right;}
+.vc_row-fluid,.wpb_row,.full-width-content,.nectar-slider-wrap{direction:ltr;}
+.nectar-progress-bar,#page-header-bg .col,.nectar-milestone,.swiper-wrapper,.nectar-social{direction:rtl;}
+input[type="text"], textarea, input[type="email"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"], input[type="date"]{direction:rtl;}
+#sidebar ,#footer-outer .widget,.post ,.post-header, #single-below-header,#portfolio-filters-inline,blockquote,#portfolio-filters{direction:rtl;}
+.row .col.section-title.project-title, .row .col.section-title.blog-title,.wpb_text_column,.comments-section,#commentform .row{direction:rtl;}
+html .woocommerce .woocommerce-message, html .woocommerce .woocommerce-error, html .woocommerce .woocommerce-info,.product,.woocommerce .woocommerce-ordering,.img-with-aniamtion-wrap{direction:rtl;}
+.nectar-button,.toggles,.tabbed ,* > ul > li  ,.pricing-column,.nectar-fancy-ul ul li ,header#top #logo.no-image ,.sf-menu li ,h1, h2, h3, h4, h5, h6, p ,.woocommerce{direction:rtl;}
+
+body .vc_span3 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .content a,
+body .vc_span4 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .content a,
+body .vc_span6 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .content a,
+body .vc_span8 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .content a,
+body .vc_span9 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .content a,
+#featured article .post-title > a,.swiper-slide .button a,.swiper-slide .button.transparent a,.swiper-slide .content h2,.single-portfolio #full_width_portfolio .row .col.section-title h1,
+body .nectar-slider-wrap[data-fullscreen="false"]  .swiper-slide .content h2,.nectar-slider-wrap[data-fullscreen="false"] .swiper-slide .button a,
+body .nectar-slider-wrap[data-fullscreen="false"] .swiper-slide .button.transparent a,
+body .nectar-slider-wrap[data-fullscreen="true"]  .swiper-slide .content h2, 
+body .vc_span3 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .content h2,
+body .vc_span4 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .content h2,
+body .vc_span6 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .content h2,
+body .vc_span8 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .content h2,
+body .vc_span9 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .content h2,
+.nectar-slider-wrap[data-fullscreen="true"] .swiper-slide .button a,
+body .vc_span3 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .button a,
+body .vc_span4 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .button a,
+body .vc_span6 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .button a,
+body .vc_span8 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .button a,
+body .vc_span9 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .button a,
+body .nectar-slider-wrap[data-fullscreen="true"] .swiper-slide .button.transparent a,
+body .vc_span3 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .button.transparent a,
+body .vc_span4 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .button.transparent a,
+body .vc_span6 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .button.transparent a,
+body .vc_span8 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .button.transparent a,
+body .vc_span9 .nectar-slider-wrap[data-flexible-height="true"]  .swiper-slide .button.transparent a ,
+#header-outer .total, #header-outer .total strong,.woocommerce .summary .price,h1,h2,h3,h4,h5,h6,h2.light,h3.light,h4.light,h5.light,h6.light,h1.uppercase,
+h2.uppercase,h3.uppercase,h4.uppercase,h5.uppercase,h6.uppercase,blockquote,header#top #logo,header#top nav > ul > li.megamenu > ul > li > a,
+#search-outer  #search input[type=text],.row .col.section-title h1, .row .col.section-title h2,body .vc_text_separator div,.nectar-button,.nectar-button.small ,
+.nectar-button.medium,.swiper-slide .content p, .swiper-slide .content h2, .swiper-slide .content .buttons,.swiper-slide .content h2,.swiper-slide .button a,.carousel-heading h2,
+body .carousel-wrap[data-full-width="true"] .carousel-heading h2,.home .blog-recent .span_3 .post-header h3, .blog-recent .span_3 .post-header h3,#portfolio-filters-inline #current-category,
+.portfolio-items .col.span_3 .work-meta h4 ,.search .row .col.section-title h1,.nectar-milestone .subject,body .vc_pie_chart .wpb_pie_chart_heading,
+.pricing-column.highlight h3 .highlight-reason,#footer-outer .widget h4 ,#call-to-action .container span ,#call-to-action .container a,#sidebar h4,.recent-posts-title,
+#respond h3, h3#comments {letter-spacing: 0 !important;}
+
+header#top nav > ul > li{float: right;}
+.sf-menu .sf-with-ul a{ padding-left: 16px !important; padding-right: 1em !important;}
+.sf-sub-indicator{right: 8px;left: 8px;}
+header#top nav ul #search-btn > div{border-right: 1px solid #E7E7E7; padding-right: 19px;border-left: 0; padding-left: 0;}
+header#top nav ul #search-btn{margin-right: 15px !important;margin-left: auto !important;}
+header#top nav ul li a{text-align: right;}
+.sf-menu li:hover ul, .sf-menu li.sfHover ul{right:0;left:auto;}
+.sf-menu li li ul {	right: 16em !important;left: auto !important;}
+header#top #logo.no-image{text-align: left;}
+.swiper-container .slider-next .slide-count{right:auto;}
+.swiper-slide .buttons > div:first-child{padding-right: 0px;padding-left: 8px;}
+.swiper-slide .buttons > div:last-child{padding-left: 0px!Important;padding-right: 8px!Important;}
+.masonry-blog-item .post-meta .date{float:right;}
+.masonry-blog-item .post-meta .nectar-love-wrap{float:left;}
+.masonry-blog-item .post-meta .nectar-love-wrap a{margin-left:0 !important;}
+article.post.quote .post-content .quote-inner span.icon,article.post.link .post-content .link-inner span.icon{ left: 20px; right: auto;}
+.iwithtext .iwt-icon{right:0;left:auto;}
+.iwithtext .iwt-text{padding-right: 55px;padding-left: 0;}
+.work-item .work-info .bottom-meta{text-align:right;}
+.toggle h3 a i{right: 13px;left: auto;}
+h3 [class^="icon-"], h2 [class^="icon-"], h4 [class^="icon-"], h5 [class^="icon-"]{margin-left: 5px;margin-right: auto;}
+.toggle h3 a{padding: 14px 43px 16px 14px;}
+.nectar-progress-bar span strong{left:0;right:auto;}
+.team-member{text-align: right;}
+.team-member ul.social li{float:right;}
+.team-member ul.social li:before{content: " / ";}
+.team-member ul.social li:after{content: " ";}
+.team-member ul.social li:first-child a{margin-right: 0;margin-left: auto;}
+.team-member ul.social li:last-child:before{content: " " !important;}
+.carousel-prev{left:0;right:auto !important;padding-right: 0;padding-left: 1px;}
+.carousel-next{left:25px;right:auto !important;padding-right: 1px;padding-left: 0;}
+.carousel-wrap[data-full-width="true"] .carousel-heading a.portfolio-page-link{right:0;left:auto;}
+#sort-portfolio i{left:5px;right:auto;}
+#sort-portfolio span{padding-right: 0px!important;}
+#portfolio-filters #sort-portfolio{padding-left: 40px;padding-right: 15px;}
+#portfolio-filters{float:left;}
+.portfolio-items .nectar-love-wrap{float: left;text-align: left;}
+.portfolio-items .work-meta{float: right;text-align: right;}
+#portfolio-filters-inline .container > ul{float:left;margin-left: -10px!important;margin-right: auto !important;}
+#portfolio-filters-inline #current-category{float:right;padding-right:3px;}
+.tabbed > ul li{float:right;}
+.pricing-column{float:right;}
+#sidebar .widget .tagcloud a, .post-tags a{float: right; margin: 3px 0 0 3px;}
+.widget_search .search-form input[type="submit"], .newsletter-widget form input[type="submit"]{left:0;right:auto;}
+.widget_search .search-form input[type="text"], .newsletter-widget form input[type="email"]{padding-left: 75px !important;padding-right: 0 !important;}
+.row .col.section-title span{padding-right: 10px;padding-left: 0;}
+.recent_posts_extra_widget .post-widget-image{float: right;margin-left: 10px;margin-right: auto;}
+.project-attrs li i{text-align: right;}
+.nectar-social > *{border-left: 1px solid #CCCCCC;border-right: none;}
+.nectar-social > *:first-child, .nectar-social .nectar-love{ padding-right: 0 !important;}
+.nectar-social > *:last-child{border-left: 0 none !important;padding-left: 0 !important;padding-right: 10px !important;}
+.nectar-fancy-ul ul li{ padding-right: 40px; padding-left: 0;}
+.nectar-fancy-ul[data-animation="true"] ul li{ right: -20px; left: auto !important;}
+.col.centered-text ul, .wpb_column.centered-text ul{ text-align: right;}
+.nectar-fancy-ul ul li i{right:0;left:auto;}
+.single #single-meta{left:0;right:auto;}
+.single #single-below-header span{float:right;}
+.single #single-below-header span:first-child{ padding-right: 0; padding-left: 5px;}
+.single #single-below-header > span{border-right: 1px solid #DDDDDD;border-left: none;}
+body[data-smooth-scrolling="1"] #full_width_portfolio .project-title.parallax-effect, body[data-smooth-scrolling="1"] #page-header-bg[data-parallax="1"]{padding-left: 16px;padding-right: 0;}
+#commentform .col{float:right;}
+#commentform .col:last-child,#commentform .col.col_last{margin-left: 0;}
+.comment-list li.comment > div img.avatar, .comment-list li.pingback > div img.avatar{right: 29px;left: auto;}
+.comment-list li.comment > div, .comment-list li.pingback > div{padding: 25px 116px 25px 25px;}
+.comment-list .reply{left: 29px;right: auto;}
+.comment-list .children{ background-position: right 20px; border-right: 1px solid #DDDDDD;border-left: none; margin-right: 0 !important; padding-right: 40px;padding-left:0;}
+body .icon-tiny[class^="icon-"]{margin-left: 5px;margin-right: 0;}
+.row.blog-recent .col{float:right;}
+.row.blog-recent .col.col_last,.row.blog-recent .col:last-child,.blog-recent div:last-of-type{margin-left: 0;}
+#sidebar .widget input[type="text"], #sidebar .widget input[type="email"]{ padding: 10px !important;}
+.flex-direction-nav li{margin-right: 7px !important; margin-left: auto !important;}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{float: right; margin: 0 0 2.992em 3.8%;}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{margin-left: 2% !important;margin-right: 0 !important;}
+.woocommerce .woocommerce-result-count, .woocommerce-page .woocommerce-result-count{float:right;}
+.woocommerce .products.related .product, .woocommerce .products.upsells .product{margin-left: 2% !important;margin-right: 0 !important;}
+.woocommerce #content div.product form.cart div.quantity, .woocommerce div.product form.cart div.quantity, .woocommerce-page #content div.product form.cart div.quantity, .woocommerce-page div.product form.cart div.quantity{float: right;margin: 0 0 0 4px;}
+.woocommerce #content div.product form.cart .button, .woocommerce div.product form.cart .button, .woocommerce-page #content div.product form.cart .button, .woocommerce-page div.product form.cart .button{float:right;}
+.woocommerce div.product form.cart .button, .woocommerce-page div.product form.cart .button, .woocommerce #content div.product form.cart .button, .woocommerce-page #content div.product form.cart .button{margin-right: 20px;margin-left: 0;}
+.woocommerce .woocommerce-product-rating .star-rating, .woocommerce-page .woocommerce-product-rating .star-rating{float: right;margin: 0.5em 0 0 4px;}
+#copyright .col{float:right;}
+#copyright .col.col_last,#copyright .col:last-child{margin-left: 0;}
+#footer-outer #copyright .col ul{float:left;}
+#footer-outer #copyright li{float:right;margin-right: 20px;margin-left: 0;}
+.woocommerce #reviews #comments ol.commentlist li img.avatar, .woocommerce-page #reviews #comments ol.commentlist li img.avatar{ right: 25px !important; left: auto !important;}
+.woocommerce #reviews #comments ol.commentlist li .comment-text, .woocommerce-page #reviews #comments ol.commentlist li .comment-text{margin: 0 50px 0 0;}
+.woocommerce .commentlist li .comment_container .comment-text{ margin-right: 70px !important; margin-left: auto !important;}
+.woocommerce .star-rating, .woocommerce-page .star-rating{float:left;}
+.woocommerce p.stars a.star-1:after, .woocommerce p.stars a.star-2:after, .woocommerce p.stars a.star-3:after, .woocommerce p.stars a.star-4:after, .woocommerce p.stars a.star-5:after, .woocommerce-page p.stars a.star-1:after, .woocommerce-page p.stars a.star-2:after, .woocommerce-page p.stars a.star-3:after, .woocommerce-page p.stars a.star-4:after, .woocommerce-page p.stars a.star-5:after{right:0;left:auto;}
+.woocommerce p.stars a.star-1, .woocommerce p.stars a.star-2, .woocommerce p.stars a.star-3, .woocommerce p.stars a.star-4, .woocommerce p.stars a.star-5, .woocommerce-page p.stars a.star-1, .woocommerce-page p.stars a.star-2, .woocommerce-page p.stars a.star-3, .woocommerce-page p.stars a.star-4, .woocommerce-page p.stars a.star-5{border-left: 1px solid #CCCCCC;border-right: none;}
+.woocommerce p.stars a, .woocommerce-page p.stars a{ margin-left: 1em; margin-right: 0;}
+.woocommerce .woocommerce-error .button, .woocommerce .woocommerce-info .button, .woocommerce .woocommerce-message .button, .woocommerce-page .woocommerce-error .button, .woocommerce-page .woocommerce-info .button, .woocommerce-page .woocommerce-message .button{float:left;}
+.wc-forward a:after, .wc-forward:after{margin-right: 7px;margin-left: auto;}
+.woocommerce table.shop_table, .woocommerce-page table.shop_table{margin: 0 0 24px -1px;text-align: right;}
+caption, th, td{text-align: right;}
+.woocommerce table.cart tr td:first-child{ padding-right: 0 !important; padding-left: 10px !important;}
+.woocommerce #content table.cart td.actions, .woocommerce table.cart td.actions, .woocommerce-page #content table.cart td.actions, .woocommerce-page table.cart td.actions{text-align: left;}
+.woocommerce #content table.cart td.actions .coupon, .woocommerce table.cart td.actions .coupon, .woocommerce-page #content table.cart td.actions .coupon, .woocommerce-page table.cart td.actions .coupon{float:right;}
+.woocommerce #post-area .woocommerce-ordering{ float: left !important;}
+.woocommerce .span_9 .woocommerce-ordering{ left: 0; right: auto;}
+.woocommerce-page ul.product_list_widget li img{float: right !important; margin-left: 15px !important; margin-right: 0 !important;}
+.woocommerce #post-area .woocommerce-result-count{float: right !important;}
+.woocommerce .span_9 ul.products li.product, .woocommerce-page .span_9 ul.products li.product{margin-left: 2% !important;margin-right: 0 !important;}
+.woocommerce .products.related ul.products li.product.last, .woocommerce-page .products.related ul.products li.product.last, .woocommerce-page ul.products li.product.last, .woocommerce ul.products li.product.last{margin-left: 0 !important;}
+#header-outer .widget_shopping_cart .cart_list a img{float: right;margin-right: 0 !important; margin-left: 14px !important;}
+#header-outer .widget_shopping_cart .cart_list{right:auto;}
+body.single-product div.product .product_title{padding-right:0 !important;}
+.nectar-sharing i{ padding-left: 4px;padding-right: 0;}
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1{float:right;}
+.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2{float:left;}
+.woocommerce form .form-row-first, .woocommerce form .form-row-last, .woocommerce-page form .form-row-first, .woocommerce-page form .form-row-last{float:right;}
+.woocommerce form .form-row-last, .woocommerce-page form .form-row-last{float:left;}
+.woocommerce .checkout .col-2 h3#ship-to-different-address, .woocommerce-page .checkout .col-2 h3#ship-to-different-address{float:right;}
+.woocommerce #payment ul.payment_methods li, .woocommerce-page #payment ul.payment_methods li{text-align: right;}
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register, .woocommerce-page form.checkout_coupon, .woocommerce-page form.login, .woocommerce-page form.register{text-align: right;}
+.woocommerce .order_details li, .woocommerce-page .order_details li{float:right;margin-left: 2em; padding-left: 2em;margin-right: 0; padding-right: 0;}
+.woocommerce .order_details li, .woocommerce-page .order_details li{ border-left: 1px dashed #E0DADF; border-right: none;}
+.woocommerce .addresses .title h3, .woocommerce-page .addresses .title h3{float:right;}
+.woocommerce table.my_account_orders td, .woocommerce table.my_account_orders th, .woocommerce-page table.my_account_orders td, .woocommerce-page table.my_account_orders th{ text-align: right !important;}
+.woocommerce table.my_account_orders .order-actions, .woocommerce-page table.my_account_orders .order-actions{  text-align: left !important;}
+.woocommerce table.my_account_orders .order-actions .button, .woocommerce-page table.my_account_orders .order-actions .button{ margin: 0.125em 0.25em 0.125em 0;}
+.wc-backward a:before, .wc-backward:before{margin-left: 7px;margin-right: auto;}
+.woocommerce .woocommerce-ordering{left:0;right:auto;}
+.testimonial_slider .controls ul{  text-align: center;}
+.post-tags h4{float: right;margin-left: 25px;margin-right: auto;}
+#author-bio img{right: 0;left: auto;}
+#author-bio #author-info{padding-right: 105px;padding-left: 0;}
+.widget_calendar table #prev{text-align: right;}
+#page-header-bg[data-alignment="center"] .row{text-align: center;}
+#page-header-bg[data-alignment="right"] .row{text-align: right;}
+#page-header-bg[data-alignment="left"] .row{text-align: left;}
+#pagination .next a, #pagination .next.inactive, #pagination .page-numbers.next, .woocommerce nav.woocommerce-pagination ul li .page-numbers.next{text-indent: 9999px;}
+.woocommerce div.product form.cart .variations td.label, .woocommerce #content div.product form.cart .variations td.label, .woocommerce-page div.product form.cart .variations td.label, .woocommerce-page #content div.product form.cart .variations td.label{padding-left: 1em;padding-right: 0;}
+.woocommerce .reset_variations{left: -200px;right: auto;}
+header#top nav > ul > li.megamenu > ul > li ul{right:0 !important;}
+header#top nav > ul > li.megamenu > ul.sub-menu{right:0;left:auto;}
+header#top nav > ul > li.megamenu > ul > li {border-left: 1px solid rgba(255, 255, 255, 0.08);border-right: none;}
+.single.single-post .section-title h1{text-align: right;}
+.woocommerce ul.products li.product .onsale, .woocommerce-page ul.products li.product .onsale, .woocommerce span.onsale, .woocommerce-page span.onsale{left: 15px !important;right: auto !important;}
+.woocommerce ul.products li.product .onsale, .woocommerce-page ul.products li.product .onsale{margin: -6px 0 0 -6px;left:0;right:auto;}
+.woocommerce-page .single-product-main-image .onsale{left: 9px !important;right: auto !important;}
+.woocommerce .cart-collaterals .shipping_calculator .shipping-calculator-button:after, .woocommerce-page .cart-collaterals .shipping_calculator .shipping-calculator-button:after{margin-right: 7px;margin-left: auto;}
+.woocommerce .cart-collaterals .cart_totals{text-align: right !important;}
+.woocommerce .cart-collaterals .cart_totals{float: right !important;}
+.woocommerce .cart-collaterals .shipping_calculator, .woocommerce-page .cart-collaterals .shipping_calculator{ clear: left;float: left;}
+.woocommerce .cart-collaterals .cart_totals table th, .woocommerce-page .cart-collaterals .cart_totals table th{padding: 6px 0 0 12px;}
+.sf-menu li{float: right;}
+body[data-header-color="dark"] #header-secondary-outer nav > ul > li > a{ border-right: 1px solid #222222; border-left: none;}
+#header-secondary-outer nav > ul > li > a{ border-right: 1px solid #DDDDDD; border-left: none;}
+#header-secondary-outer #social li{float: right;}
+body[data-header-color="dark"] header#top nav ul #search-btn > div{border-right: 1px solid #333333;border-left: none;}
+.woocommerce .span_9.col_last .woocommerce-ordering{left: 20px !important;right: auto !important;}
+.woocommerce .span_9 .products.related .products li:nth-child(3), .woocommerce .span_9 .products.upsells .products li:nth-child(3){  margin-left: 0 !important;}
+.recent_projects_widget div a, #sidebar #flickr div a, #footer-outer #flickr div a{float: right; margin: 2% 0 0 2%;}
+.recent_projects_widget div a:nth-child(3n+3), #sidebar #flickr div:nth-child(3n+3) a, #footer-outer #flickr div:nth-child(3n+3) a{margin-left: 0 !important;}
+#footer-outer #footer-widgets .col .tagcloud a{float: right;margin: 3px 0 0 3px;}
+#header-secondary-outer nav > ul > li:last-child{border-left: 1px solid #DDDDDD;border-right: none;}
+.woocommerce td.product-name dl.variation dt, .woocommerce td.product-name dl.variation dd, .woocommerce-page td.product-name dl.variation dt, .woocommerce-page td.product-name dl.variation dd{float:right;}
+.woocommerce td.product-name dl.variation dt, .woocommerce-page td.product-name dl.variation dt{clear: right; margin: 0 0 0 4px;}
+.woocommerce ul.cart_list li dl dt, .woocommerce ul.product_list_widget li dl dt, .woocommerce-page ul.cart_list li dl dt, .woocommerce-page ul.product_list_widget li dl dt{clear: right;margin: 0 0 0 4px;}
+.woocommerce ul.cart_list li dl dt, .woocommerce ul.cart_list li dl dd, .woocommerce ul.product_list_widget li dl dt, .woocommerce ul.product_list_widget li dl dd, .woocommerce-page ul.cart_list li dl dt, .woocommerce-page ul.cart_list li dl dd, .woocommerce-page ul.product_list_widget li dl dt, .woocommerce-page ul.product_list_widget li dl dd{float: right;}
+.woocommerce ul.cart_list li dl, .woocommerce ul.product_list_widget li dl, .woocommerce-page ul.cart_list li dl, .woocommerce-page ul.product_list_widget li dl{border-right: 2px solid rgba(0, 0, 0, 0.1);border-left: none;padding-right: 1em;padding-left: 0;}
+
+@media only screen and (min-width: 1000px){
+body .carousel-heading .container .carousel-prev{left:5px;right:auto !important;}
+body .carousel-heading .container .carousel-next{left:30px;right:auto !important;}
+.carousel-wrap[data-full-width="true"] .carousel-heading a.portfolio-page-link{right:90px;left:auto !important;}
+.carousel-wrap[data-full-width="true"] .carousel-prev{left: 90px !important;right: auto !important;}
+.carousel-wrap[data-full-width="true"] .carousel-next{left: 115px !important;right: auto !important;}
+}
+
+
+@media (min-width: 690px){
+#commentform .col{margin-left: 2%;margin-right: 0;}
+.row.blog-recent .col{margin-left: 2%;margin-right: 0;}
+#copyright .col{margin-left: 2%;margin-right: 0;}
+}
+
+
+@media only screen and (max-width: 1000px) and (min-width: 1px){
+a > .sf-sub-indicator{left: 0px!important;right: auto !important;}
+}
