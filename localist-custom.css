@@ -1,0 +1,422 @@
+@charset "UTF-8";
+
+#socialm{float:right; text-align: right;}
+
+#socialm img.alignnone{padding-right: 5px; width: 15%;}
+
+div#header-outer {
+  position: absolute;
+}
+
+form.woocommerce-ordering{display: none;}
+
+
+.woocommerce mark {
+    background-color: rgb(0, 0, 0)!important;
+    color: #fff;
+    padding: 0px 5px;
+    margin: 0px 5px;
+}
+@media screen and (max-width:1000px){
+
+
+#socialm{margin-top: 40px;}
+#footer-widgets .container .row > div:last-child, #footer-widgets .container .row > div.col_last{display: none;}
+#call-to-action .container{padding: 10px 0px 10px 0px!important;}
+#call-to-action span{font-size: 16px!important;}
+
+#cta{text-align:center!important;}
+#cta a{color:#fff;}
+}
+@media screen and (min-width:1000px){
+	
+.phone, .booking{background-color: white;
+padding: 0px 30px;
+font-size: 33px;
+vertical-align: middle;
+margin: 0px 10px;}
+
+
+#top .container{padding: 20px 90px;}
+
+
+div#header-secondary-outer .container{max-width: auto;}
+#cta a{color:#00a972;}
+}
+
+
+/* Localist Custom CSS */
+
+a.btns {
+border: #ffffff solid;
+padding: 5px 15px;}
+
+span.right {
+float: right;
+width: 45%;
+display: block;
+}
+
+
+
+#cta {
+	font-weight:900;
+padding: 5px 20px;
+width: 100%;
+text-align: right;
+background-color:#00a76d;
+}
+
+#footer-outer .row{border-top: 1px solid #00a76d;}
+
+
+
+h1, h2, h3, h4, h5, h6 {color:#00a76d!important;}
+
+body{color: #ffffff;}
+
+
+/*.container-wrap{
+	background:#000000;	
+}*/
+
+.container-wrap {
+    background: #000;
+    color: #fff;
+}
+
+div#header-outer {
+  box-shadow: none;
+}
+
+.cta-box {
+  /*padding: 8px 55px;*/
+  border: 1px solid #00a972;
+}
+
+#top-row {
+  margin-top: -19px !important;
+}
+
+p.cta-heading {
+  font-size: 2rem;
+  margin-top: 3%  !important;
+  display: inline-block;
+  line-height:0px;
+}
+
+.contact-form-heading{
+	  font-size: 2rem;
+}
+
+.gform_wrapper .gform_footer {
+  padding: 1em 50% .625em 36% !important;
+}
+
+input#gform_submit_button_1 {
+  width: 115px;
+}
+
+h3.gform_title {
+  text-align: center;
+  font-size: 2rem !important;
+  font-weight: 400 !important;
+  margin-bottom: 0px !important;
+  color:white !important;
+}
+
+
+p.cta-sub {
+  line-height: 0px;
+}
+
+img.cta {
+  float: left;
+  padding-left: 12%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.cta-box a.nectar-button.small.regular {
+  color: rgb(90, 90, 90);
+  font-size: 12px;
+}
+
+a.nectar-button.small.regular {
+  border: 1px solid #00a972;
+  border-radius: 0px;
+}
+
+img.hover:hover::after {
+  content: "hello";
+  display: block;
+}
+
+div#tr_credit {
+  display: none;
+}
+
+/* IMAGE HOVER CSS */
+
+#more {
+   background-image: url('http://localist-testing-stage.co.nz/MySite/manatoursnz/wp-content/uploads/2015/05/mana-more.png');
+   height: 210px;
+   width: 210px;
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position:center;
+   display:inline-block;
+
+}
+
+#more:hover {
+   background-image: url('http://localist-testing-stage.co.nz/MySite/manatoursnz/wp-content/uploads/2015/05/mana-more-over.png');
+   height: 210px;
+   width: 210px;
+   background-repeat:no-repeat;
+   background-size:cover;
+   display:inline-block;
+}
+
+#corporate {
+   background-image: url('http://localist-testing-stage.co.nz/MySite/manatoursnz/wp-content/uploads/2015/05/mana-corporate.png');
+   height: 210px;
+   width: 210px;
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position:center;
+   display:inline-block;
+
+}
+
+#corporate:hover {
+   background-image: url('http://localist-testing-stage.co.nz/MySite/manatoursnz/wp-content/uploads/2015/05/mana-corporate-over.png');
+   height: 210px;
+   width: 210px;
+   background-repeat:no-repeat;
+   background-size:cover;
+   display:inline-block;
+}
+
+#private {
+   background-image: url('http://localist-testing-stage.co.nz/MySite/manatoursnz/wp-content/uploads/2015/05/mana-private.png');
+   height: 210px;
+   width: 210px;
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position:center;
+   display:inline-block;
+
+}
+
+#private:hover {
+   background-image: url('http://localist-testing-stage.co.nz/MySite/manatoursnz/wp-content/uploads/2015/05/mana-private-over.png');
+   height: 210px;
+   width: 210px;
+   background-repeat:no-repeat;
+   background-size:cover;
+   display:inline-block;
+}
+
+#student {
+   background-image: url('http://localist-testing-stage.co.nz/MySite/manatoursnz/wp-content/uploads/2015/05/mana-student.png');
+   height: 210px;
+   width: 210px;
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position:center;
+   display:inline-block;
+
+}
+
+#student:hover {
+   background-image: url('http://localist-testing-stage.co.nz/MySite/manatoursnz/wp-content/uploads/2015/05/mana-student-over.png');
+   height: 210px;
+   width: 210px;
+   background-repeat:no-repeat;
+   background-size:cover;
+   display:inline-block;
+}
+
+/* IMAGE HOVER ENDS */
+
+.divider-border {
+  margin: 35px 0px 35px 0px;
+  border-bottom: 1px solid #00a972;
+}
+
+#footer-widgets h4 {
+  font-size: 18px !important;
+  color: black !important;
+  /* font-family: roboto !important; */
+}
+
+.col.span_5 {
+  margin: auto;
+  float: left;
+  text-align: center;
+}
+
+/*PADDING*/
+
+.left-right {
+  padding: 0 120px;
+}
+
+.grey-box{
+	padding-top:0 !important;
+}
+
+img.float-right {
+  border: 1px solid #00a972;
+  padding: 10px;
+}
+
+input {
+  border-radius: 10px;
+}
+
+textarea#input_1_4 {
+  border-radius: 10px;
+}
+
+input#gform_submit_button_1 {
+  border-radius: 15px;
+  background: white;
+  color: grey;
+}
+
+input#gform_submit_button_1:hover {
+  color: white;
+}
+
+div#header-secondary-outer {
+  position: absolute;
+}
+
+
+@media (min-width: 690px){
+	 .span_4:first-child {
+	  width: 20%;
+	}
+	.span_4:nth-child(2) {
+	  width: 45%;
+	}
+	.span_4:nth-child(3) {
+	  width: 30%;
+	}
+	
+	.span_7 {
+  		width: 43.5%;
+	}
+	
+	.span_5 {
+  		width: 50.5%;
+	}
+}
+
+
+@media screen and (max-width:480px){
+	img.cta{
+		float:none;
+		margin:auto;
+		padding-top:6%;
+		padding-bottom:0;
+		padding-left:0;
+		padding-right:0;
+	}
+  #socialm {
+    display: none;
+  }
+  header#top #toggle-nav i, header#top #mobile-cart-link i, header#top .span_9 > .slide-out-widget-area-toggle i {
+    background-color: transparent!important;
+    color: #a9a9a9;
+    line-height: 34px;
+    font-size: 40px;
+    width: 40px;
+}
+body header#top #logo img {
+    height: 40px !important;
+    position: relative;
+}
+#cta a {
+    color: #fff;
+}
+header#top, #header-outer {
+    height: auto!important;
+    background-color: #00a76d!important;
+}
+header#top #logo {
+    margin-top: 0px!important;
+}
+#cta {
+    display: none;
+}
+.swiper-slide[data-x-pos="left"] .content {
+    display: none;
+}
+}
+.wpb_content_element .wpb_tabs_nav li{font-size: 20px;}
+
+/*#page-header-bg {background-color: #fff !important;}*/
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+    display: none;
+}
+
+.woocommerce .single-product-summary {
+    padding-left: 32px;
+}
+
+.quantity:after {
+    content: " Passenger/s";
+}
+
+.woocommerce table.shop_table {
+    border: 1px solid rgba(0,0,0,.1);
+    margin: 0 -1px 24px 0;
+    text-align: left;
+    width: 100%;
+    border-collapse: separate;
+    border-radius: 5px;
+    background: #fff;
+    color: #555;
+}
+
+.woocommerce table.shop_table th, .woocommerce-page table.shop_table th, .woocommerce table.shop_table tfoot td, .woocommerce table.shop_table tfoot th, .woocommerce-page table.shop_table tfoot td, .woocommerce-page table.shop_table tfoot th {
+    font-weight: normal!important;
+    font-family: 'OpenSansSemiBold';
+    color: #000;
+}
+
+.woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button {
+    background-color: #333333!important;
+    box-shadow: none!important;
+    -moz-box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    -o-box-shadow: none!important;
+    background-image: none!important;
+    text-shadow: none!important;
+    -moz-text-shadow: none!important;
+    -webkit-text-shadow: none!important;
+    -o-text-shadow: none!important;
+    border: none!important;
+    background-repeat: no-repeat;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px!important;
+    line-height: 20px;
+    padding: 10px 10px!important;
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: normal!important;
+    transition: bottom 0.2s linear 0s, background-color 0.2s linear 0s;
+}
+
+a.button.wc-forward {
+    font-size: 20px !important;
+    text-transform: uppercase !important;
+}
+
