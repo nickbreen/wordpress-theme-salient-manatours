@@ -12,7 +12,7 @@
 
 <?php } else { ?>
 	<meta name="viewport" content="width=1200" />
-<?php } ?>	
+<?php } ?>
 
 <!--Shortcut icon-->
 <?php if(!empty($options['favicon'])) { ?>
@@ -21,26 +21,27 @@
 
 
 <title> <?php wp_title("|",true, 'right'); ?> <?php if (!defined('WPSEO_VERSION')) { bloginfo('name'); } ?></title>
+
 <?php wp_head(); ?>
 
 </head>
 
 <?php
- global $post; 
- global $woocommerce; 
+ global $post;
+ global $woocommerce;
 
 if($woocommerce && is_shop() || $woocommerce && is_product_category() || $woocommerce && is_product_tag()) {
 	$header_title = get_post_meta(woocommerce_get_page_id('shop'), '_nectar_header_title', true);
 	$header_bg = get_post_meta(woocommerce_get_page_id('shop'), '_nectar_header_bg', true);
 	$header_bg_color = get_post_meta(woocommerce_get_page_id('shop'), '_nectar_header_bg_color', true);
-} 
+}
 else if(is_home() || is_archive()){
 	$header_title = get_post_meta(get_option('page_for_posts'), '_nectar_header_title', true);
-	$header_bg = get_post_meta(get_option('page_for_posts'), '_nectar_header_bg', true); 
+	$header_bg = get_post_meta(get_option('page_for_posts'), '_nectar_header_bg', true);
 	$header_bg_color = get_post_meta(get_option('page_for_posts'), '_nectar_header_bg_color', true);
 }  else {
 	$header_title = get_post_meta($post->ID, '_nectar_header_title', true);
-	$header_bg = get_post_meta($post->ID, '_nectar_header_bg', true); 
+	$header_bg = get_post_meta($post->ID, '_nectar_header_bg', true);
 	$header_bg_color = get_post_meta($post->ID, '_nectar_header_bg_color', true);
 }
 
@@ -49,7 +50,7 @@ $parallax_nectar_slider = using_nectar_slider();
 $force_effect = get_post_meta($post->ID, '_force_transparent_header', true);
 
 //header vars
-$logo_class = (!empty($options['use-logo']) && $options['use-logo'] == '1') ? null : 'class="no-image"'; 
+$logo_class = (!empty($options['use-logo']) && $options['use-logo'] == '1') ? null : 'class="no-image"';
 $sideWidgetArea = (!empty($options['header-slide-out-widget-area'])) ? $options['header-slide-out-widget-area'] : 'off';
 $fullWidthHeader = (!empty($options['header-fullwidth']) && $options['header-fullwidth'] == '1') ? 'true' : 'false';
 $headerSearch = (!empty($options['header-disable-search']) && $options['header-disable-search'] == '1') ? 'false' : 'true';
@@ -57,7 +58,7 @@ $headerFormat = (!empty($options['header_format'])) ? $options['header_format'] 
 $fullWidthHeader = (!empty($options['header-fullwidth']) && $options['header-fullwidth'] == '1') ? 'true' : 'false';
 $headerColorScheme = (!empty($options['header-color'])) ? $options['header-color'] : 'light';
 $userSetBG = (!empty($options['header-background-color'])) ? $options['header-background-color'] : '#ffffff';
-if($headerColorScheme == 'dark') { $userSetBG = '#1f1f1f'; } 	
+if($headerColorScheme == 'dark') { $userSetBG = '#1f1f1f'; }
 
 if($headerFormat == 'centered-menu-under-logo') $fullWidthHeader = 'false';
 
@@ -67,7 +68,7 @@ if($headerFormat == 'centered-menu-under-logo') $fullWidthHeader = 'false';
 
 <?php if(!empty($options['boxed_layout']) && $options['boxed_layout'] == '1') { echo '<div id="boxed">'; } ?>
 
-<?php $using_secondary = (!empty($options['header_layout'])) ? $options['header_layout'] : ' '; 
+<?php $using_secondary = (!empty($options['header_layout'])) ? $options['header_layout'] : ' ';
 
 if($using_secondary == 'header_with_secondary') { ?>
 
@@ -96,13 +97,13 @@ if($using_secondary == 'header_with_secondary') { ?>
 						<?php  if(!empty($options['use-vk-icon-header']) && $options['use-vk-icon-header'] == 1) { ?> <li><a target="_blank" href="<?php echo $options['vk-url']; ?>"><i class="icon-vk"></i></a></li> <?php } ?>
 					</ul>
 				<?php } ?>
-				
+
 				<?php if(has_nav_menu('secondary_nav')) { ?>
-					<ul class="sf-menu">	
+					<ul class="sf-menu">
 				   	   <?php wp_nav_menu( array('walker' => new Nectar_Arrow_Walker_Nav_Menu, 'theme_location' => 'secondary_nav', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
 				    </ul>
 				<?php }	?>
-				
+
 			</nav>
 		</div>
 	</div>
@@ -111,144 +112,146 @@ if($using_secondary == 'header_with_secondary') { ?>
 
 <div id="header-space"></div>
 
-<?php 
+<?php
 	// header transparent option
 	$transparency_markup = null;
 	$activate_transparency = null;
-	
+
 	$using_fw_slider = using_nectar_slider();
     $using_fw_slider = (!empty($options['transparent-header']) && $options['transparent-header'] == '1') ? $using_fw_slider : 0;
     if($force_effect == 'on') $using_fw_slider = '1';
     $disable_effect = get_post_meta($post->ID, '_disable_transparent_header', true);
 
 	if(!empty($options['transparent-header']) && $options['transparent-header'] == '1') {
-		
+
 		$starting_color = (empty($options['header-starting-color'])) ? '#ffffff' : $options['header-starting-color'];
 		$activate_transparency = using_page_header($post->ID);
 		$remove_border = (!empty($options['header-remove-border']) && $options['header-remove-border'] == '1') ? 'true' : 'false';
 		$transparency_markup = ($activate_transparency == 'true') ? 'data-transparent-header="true" data-remove-border="'.$remove_border.'" class="transparent"' : null ;
 	}
-	
+
 ?>
 
-<div id="header-outer" data-has-menu="<?php echo (has_nav_menu('top_nav')) ? 'true' : 'false'; ?>" <?php echo $transparency_markup; ?> data-user-set-bg="<?php echo $userSetBG; ?>" data-format="<?php echo $headerFormat; ?>" data-cart="<?php echo ($woocommerce && !empty($options['enable-cart']) && $options['enable-cart'] == '1') ? 'true': 'false';?>" data-transparency-option="<?php if($disable_effect == 'on') { echo '0'; } else { echo $using_fw_slider; } ?>" data-shrink-num="<?php echo (!empty($options['header-resize-on-scroll-shrink-num'])) ? $options['header-resize-on-scroll-shrink-num'] : 6; ?>" data-full-width="<?php echo $fullWidthHeader; ?>" data-using-secondary="<?php echo ($using_secondary == 'header_with_secondary') ? '1' : '0'; ?>" data-using-logo="<?php if(!empty($options['use-logo'])) echo $options['use-logo']; ?>" data-logo-height="<?php if(!empty($options['logo-height'])) echo $options['logo-height']; ?>" data-padding="<?php echo (!empty($options['header-padding'])) ? $options['header-padding'] : "0"; ?>" data-header-resize="<?php if(!empty($options['header-resize-on-scroll'])) echo $options['header-resize-on-scroll']; ?>">
-	
-	<?php if(empty($options['theme-skin'])) { 
-		get_template_part('includes/header-search'); 
-	} 
+<div id="header-outer" data-has-menu="<?php echo (has_nav_menu('top_nav')) ? 'true' : 'false'; ?>" <?php echo $transparency_markup; ?> data-user-set-bg="<?php echo $userSetBG; ?>" data-format="<?php echo $headerFormat; ?>" data-cart="<?php echo ($woocommerce && !empty($options['enable-cart']) && $options['enable-cart'] == '1') ? 'true': 'false';?>" data-transparency-option="<?php if($disable_effect == 'on') { echo '0'; } else { echo $using_fw_slider; } ?>" data-shrink-num="<?php echo (!empty($options['header-resize-on-scroll-shrink-num'])) ? $options['header-resize-on-scroll-shrink-num'] : 6; ?>" data-full-width="<?php echo $fullWidthHeader; ?>" data-using-secondary="<?php echo ($using_secondary == 'header_with_secondary') ? '1' : '0'; ?>" data-using-logo="<?php if(!empty($options['use-logo'])) echo $options['use-logo']; ?>" data-logo-height="<?php if(!empty($options['logo-height'])) echo $options['logo-height']; ?>" data-padding="<?php echo (!empty($options['header-padding'])) ? $options['header-padding'] : "28"; ?>" data-header-resize="<?php if(!empty($options['header-resize-on-scroll'])) echo $options['header-resize-on-scroll']; ?>">
+
+	<?php if(empty($options['theme-skin'])) {
+		get_template_part('includes/header-search');
+	}
 	elseif(!empty($options['theme-skin']) && $options['theme-skin'] != 'ascend')  {
 		 get_template_part('includes/header-search');
 	} ?>
+
 	<div id="cta">FOR THE ULTIMATE EXPERIENCE CALL <a class="phone" href="tel:0800626287">0800 626 287</a> OR <a class="booking" href="/shop/"> BOOK NOW</a></div>
 	<header id="top">
-		
+
 		<div class="container">
-			
+
 			<div class="row">
-				  
+
 				<div class="col span_3">
-					
+
 					<a id="logo" href="<?php echo home_url(); ?>" <?php echo $logo_class; ?>>
-						
+
 						<?php if(!empty($options['use-logo'])) {
-							
+
 								$default_logo_class = (!empty($options['retina-logo'])) ? 'default-logo' : null;
-								$dark_default_class = (empty($options['header-starting-logo-dark'])) ? ' dark-version': null; 
+								$dark_default_class = (empty($options['header-starting-logo-dark'])) ? ' dark-version': null;
 
 								 echo '<img class="'.$default_logo_class. $dark_default_class.'" alt="'. get_bloginfo('name') .'" src="' . nectar_options_img($options['logo']) . '" />';
-								 
+
 								 if(!empty($options['retina-logo'])) echo '<img class="retina-logo '.$dark_default_class.'" alt="'. get_bloginfo('name') .'" src="' . nectar_options_img($options['retina-logo']) . '" />';
-							 	 
-								 //starting logo 
+
+								 //starting logo
 								 if($activate_transparency == 'true'){
 								 	 if(!empty($options['header-starting-logo'])) echo '<img class="starting-logo '.$default_logo_class.'"  alt="'. get_bloginfo('name') .'" src="' . nectar_options_img($options['header-starting-logo']) . '" />';
 									 if(!empty($options['header-starting-retina-logo'])) echo '<img class="retina-logo starting-logo" alt="'. get_bloginfo('name') .'" src="' . nectar_options_img($options['header-starting-retina-logo']) . '" />';
 
 									 if(!empty($options['header-starting-logo-dark'])) echo '<img class="starting-logo dark-version '.$default_logo_class.'"  alt="'. get_bloginfo('name') .'" src="' . nectar_options_img($options['header-starting-logo-dark']) . '" />';
 									 if(!empty($options['header-starting-retina-logo-dark'])) echo '<img class="retina-logo starting-logo dark-version " alt="'. get_bloginfo('name') .'" src="' . nectar_options_img($options['header-starting-retina-logo-dark']) . '" />';
-									 
+
 								 }
-								 
-							 } else { echo get_bloginfo('name'); } ?> 
+
+							 } else { echo get_bloginfo('name'); } ?>
 					</a>
 
 				</div><!--/span_3-->
-				
+
 				<div class="col span_9 col_last">
-					
+
 					<?php if(has_nav_menu('top_nav')) echo '<a href="#mobilemenu" id="toggle-nav"><i class="icon-reorder"></i></a>'; ?>
-					
-					<?php 
+
+					<?php
 					$sideWidgetArea = (!empty($options['header-slide-out-widget-area'])) ? $options['header-slide-out-widget-area'] : 'off';
 
-					if (!empty($options['enable-cart']) && $options['enable-cart'] == '1') { 
-						if ($woocommerce) { ?> 
+					if (!empty($options['enable-cart']) && $options['enable-cart'] == '1') {
+						if ($woocommerce) { ?>
 							<!--mobile cart link-->
 							<a id="mobile-cart-link" href="<?php echo $woocommerce->cart->get_cart_url(); ?>"><i class="icon-salient-cart"></i></a>
-						<?php } 
-					} 
-					
+						<?php }
+					}
+
 					if($sideWidgetArea == '1') { ?>
 						<div class="slide-out-widget-area-toggle">
-							<div> <a href="#sidewidgetarea" class="closed"> <i class="icon-reorder"></i> </a> </div> 
+							<div> <a href="#sidewidgetarea" class="closed"> <i class="icon-reorder"></i> </a> </div>
        					</div>
 					<?php } ?>
-					
+
 					<nav>
 						<ul class="buttons">
 							<li id="search-btn"><div><a href="#searchbox"><span class="icon-salient-search" aria-hidden="true"></span></a></div> </li>
-						
+
 							<?php if($sideWidgetArea == '1') { ?>
 								<li class="slide-out-widget-area-toggle">
-									<div> <a href="#sidewidgetarea" class="closed"> <span> <i class="lines-button x2"> <i class="lines"></i> </i> </span> </a> </div> 
+									<div> <a href="#sidewidgetarea" class="closed"> <span> <i class="lines-button x2"> <i class="lines"></i> </i> </span> </a> </div>
        							</li>
 							<?php } ?>
 						</ul>
-						<ul class="sf-menu">	
-							<?php 
+						<ul class="sf-menu">
+							<?php
 							if(has_nav_menu('top_nav')) {
-							    wp_nav_menu( array('walker' => new Nectar_Arrow_Walker_Nav_Menu, 'theme_location' => 'top_nav', 'container' => '', 'items_wrap' => '%3$s' ) ); 
+							    wp_nav_menu( array('walker' => new Nectar_Arrow_Walker_Nav_Menu, 'theme_location' => 'top_nav', 'container' => '', 'items_wrap' => '%3$s' ) );
 							}
 							elseif($sideWidgetArea != '1') {
 								echo '<li><a href="">No menu assigned!</a></li>';
 							}
 							?>
 						</ul>
-						
+
 					</nav>
+
 					<div id="socialm">
 						<a href="https://twitter.com/manatoursnz" target="_blank">
-						<img class="alignnone size-full wp-image-588" src="/wp-content/uploads/2015/05/twitter.png" alt="twitter"/></a>
+							<img class="alignnone size-full wp-image-588" src="http://wp.foobar.net.nz.s3.amazonaws.com/wp-content/uploads/sites/8/2015/05/twitter.png" alt="twitter"/></a>
 						<a href="https://www.facebook.com/pages/Mana-Tours-NZ/784501634937256?hc_location=ufi" target="_blank">
-							<img class="alignnone size-full wp-image-587" src="/wp-content/uploads/2015/05/facebook.png" alt="facebook"/></a>
-							<a href="https://www.youtube.com/channel/UCD2TIoe5KISQXeGOx0r8sqA" target="_blank">
-								<img class="alignnone size-full wp-image-591" src="/wp-content/uploads/2015/05/youtube.png" alt="youtube"/></a>
-								<a href="https://instagram.com/manatoursnz/" target="_blank">
-									<img class="alignnone size-full wp-image-590" src="/wp-content/uploads/2015/05/Instagram.png" alt="Instagram"/></a></div>
+							<img class="alignnone size-full wp-image-587" src="http://wp.foobar.net.nz.s3.amazonaws.com/wp-content/uploads/sites/8/2015/05/facebook.png" alt="facebook"/></a>
+						<a href="https://www.youtube.com/channel/UCD2TIoe5KISQXeGOx0r8sqA" target="_blank">
+							<img class="alignnone size-full wp-image-591" src="http://wp.foobar.net.nz.s3.amazonaws.com/wp-content/uploads/sites/8/2015/05/youtube.png" alt="youtube"/></a>
+						<a href="https://instagram.com/manatoursnz/" target="_blank">
+							<img class="alignnone size-full wp-image-590" src="http://wp.foobar.net.nz.s3.amazonaws.com/wp-content/uploads/sites/8/2015/05/Instagram.png" alt="Instagram"/></a></div>
 				</div><!--/span_9-->
-              
+
 			</div><!--/row-->
-			
+
 		</div><!--/container-->
-		
+
 	</header>
-	
-	
+
+
 	<?php if (!empty($options['enable-cart']) && $options['enable-cart'] == '1') { ?>
 		<?php
 		if ($woocommerce) { ?>
-			
+
 		<div class="cart-outer">
 			<div class="cart-menu-wrap">
 				<div class="cart-menu">
 					<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>"><div class="cart-icon-wrap"><i class="icon-salient-cart"></i> <div class="cart-wrap"><span><?php echo $woocommerce->cart->cart_contents_count; ?> </span></div> </div></a>
 				</div>
 			</div>
-			
+
 			<div class="cart-notification">
 				<span class="item-name"></span> <?php echo __('was successfully added to your cart.', NECTAR_THEME_NAME); ?>
 			</div>
-			
+
 			<?php
 				// Check for WooCommerce 2.0 and display the cart widget
 				if ( version_compare( WOOCOMMERCE_VERSION, "2.0.0" ) >= 0 ) {
@@ -257,49 +260,48 @@ if($using_secondary == 'header_with_secondary') { ?>
 					the_widget( 'WooCommerce_Widget_Cart', 'title= ' );
 				}
 			?>
-				
+
 		</div>
-		
-	 <?php } 
-	 
-   } 
-   
-   
+
+	 <?php }
+
+   }
+
+
    echo '<div class="ns-loading-cover"></div>';
-   
-   ?>		
-	
+
+   ?>
+
 
 </div><!--/header-outer-->
 
-<?php if(!empty($options['theme-skin']) && $options['theme-skin'] == 'ascend') { get_template_part('includes/header-search'); } ?> 
+<?php if(!empty($options['theme-skin']) && $options['theme-skin'] == 'ascend') { get_template_part('includes/header-search'); } ?>
 
 <div id="mobile-menu">
-	
+
 	<div class="container">
 		<ul>
-			<?php 
+			<?php
 				if(has_nav_menu('top_nav')) {
-					
-				    wp_nav_menu( array('theme_location' => 'top_nav', 'menu' => 'Top Navigation Menu', 'container' => '', 'items_wrap' => '%3$s' ) ); 
-					
-					echo '<li id="mobile-search">  
+
+				    wp_nav_menu( array('theme_location' => 'top_nav', 'menu' => 'Top Navigation Menu', 'container' => '', 'items_wrap' => '%3$s' ) );
+
+					echo '<li id="mobile-search">
 					<form action="'.home_url().'" method="GET">
 			      		<input type="text" name="s" value="" placeholder="'.__('Search..', NECTAR_THEME_NAME) .'" />
-					</form> 
+					</form>
 					</li>';
 				}
 				else {
 					echo '<li><a href="">No menu assigned!</a></li>';
 				}
-			?>		
+			?>
 		</ul>
 	</div>
-	
+
 </div>
 
 
 
 <div id="ajax-loading-screen" data-method="<?php echo (!empty($options['transition-method'])) ? $options['transition-method'] : 'ajax' ; ?>"><span class="loading-icon <?php echo (!empty($options['loading-image-animation']) && !empty($options['loading-image'])) ? $options['loading-image-animation'] : null; ?>"> <?php if(empty($options['loading-image'])) { if(!empty($options['theme-skin']) && $options['theme-skin'] == 'ascend') { echo '<span class="default-loading-icon spin"></span>'; } else { echo '<span class="default-skin-loading-icon"></span>'; } } ?> </span></div>
 <div id="ajax-content-wrap">
-
