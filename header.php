@@ -139,7 +139,7 @@ if($using_secondary == 'header_with_secondary') { ?>
 	elseif(!empty($options['theme-skin']) && $options['theme-skin'] != 'ascend')  {
 		 get_template_part('includes/header-search');
 	} ?>
-	<div id="cta">FOR THE ULTIMATE EXPERIENCE CALL <a class="phone" href="tel:0800626287">0800 626 287</a> OR <a class="booking" href="/shop/"> BOOK NOW</a></div>
+	<div id="cta"><a class="booking" href="/shop/"> BOOK NOW</a></div>
 	<header id="top">
 		
 		<div class="container">
