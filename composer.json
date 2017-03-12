@@ -1,0 +1,16 @@
+{
+    "name": "nickbreen/wordpress-theme-salient-manatours",
+    "description": "Salient WordPress theme with Manatours customisations Edit",
+    "type": "wordpress-theme",
+    "require": {
+        "composer/installers": "^1.0",
+        "php": ">=5.3"
+    },
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Nick Breen",
+            "email": "nick@foobar.net.nz"
+        }
+    ]
+}
