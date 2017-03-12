@@ -7,10 +7,12 @@
         "php": ">=5.3"
     },
     "license": "GPLv3",
-    "authors": [
-        {
-            "name": "Nick Breen",
-            "email": "nick@foobar.net.nz"
-        }
-    ]
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://github.com/nickbreen/wordpress-theme-salient-manatours"
+    }],
+    "authors": [{
+        "name": "Nick Breen",
+        "email": "nick@foobar.net.nz"
+    }]
 }
