@@ -21,6 +21,7 @@
 
 
 <title> <?php wp_title("|",true, 'right'); ?> <?php if (!defined('WPSEO_VERSION')) { bloginfo('name'); } ?></title>
+
 <?php wp_head(); ?>
 
 </head>
@@ -131,7 +132,7 @@ if($using_secondary == 'header_with_secondary') { ?>
 	
 ?>
 
-<div id="header-outer" data-has-menu="<?php echo (has_nav_menu('top_nav')) ? 'true' : 'false'; ?>" <?php echo $transparency_markup; ?> data-user-set-bg="<?php echo $userSetBG; ?>" data-format="<?php echo $headerFormat; ?>" data-cart="<?php echo ($woocommerce && !empty($options['enable-cart']) && $options['enable-cart'] == '1') ? 'true': 'false';?>" data-transparency-option="<?php if($disable_effect == 'on') { echo '0'; } else { echo $using_fw_slider; } ?>" data-shrink-num="<?php echo (!empty($options['header-resize-on-scroll-shrink-num'])) ? $options['header-resize-on-scroll-shrink-num'] : 6; ?>" data-full-width="<?php echo $fullWidthHeader; ?>" data-using-secondary="<?php echo ($using_secondary == 'header_with_secondary') ? '1' : '0'; ?>" data-using-logo="<?php if(!empty($options['use-logo'])) echo $options['use-logo']; ?>" data-logo-height="<?php if(!empty($options['logo-height'])) echo $options['logo-height']; ?>" data-padding="<?php echo (!empty($options['header-padding'])) ? $options['header-padding'] : "0"; ?>" data-header-resize="<?php if(!empty($options['header-resize-on-scroll'])) echo $options['header-resize-on-scroll']; ?>">
+<div id="header-outer" data-has-menu="<?php echo (has_nav_menu('top_nav')) ? 'true' : 'false'; ?>" <?php echo $transparency_markup; ?> data-user-set-bg="<?php echo $userSetBG; ?>" data-format="<?php echo $headerFormat; ?>" data-cart="<?php echo ($woocommerce && !empty($options['enable-cart']) && $options['enable-cart'] == '1') ? 'true': 'false';?>" data-transparency-option="<?php if($disable_effect == 'on') { echo '0'; } else { echo $using_fw_slider; } ?>" data-shrink-num="<?php echo (!empty($options['header-resize-on-scroll-shrink-num'])) ? $options['header-resize-on-scroll-shrink-num'] : 6; ?>" data-full-width="<?php echo $fullWidthHeader; ?>" data-using-secondary="<?php echo ($using_secondary == 'header_with_secondary') ? '1' : '0'; ?>" data-using-logo="<?php if(!empty($options['use-logo'])) echo $options['use-logo']; ?>" data-logo-height="<?php if(!empty($options['logo-height'])) echo $options['logo-height']; ?>" data-padding="<?php echo (!empty($options['header-padding'])) ? $options['header-padding'] : "28"; ?>" data-header-resize="<?php if(!empty($options['header-resize-on-scroll'])) echo $options['header-resize-on-scroll']; ?>">
 	
 	<?php if(empty($options['theme-skin'])) { 
 		get_template_part('includes/header-search'); 
@@ -139,7 +140,7 @@ if($using_secondary == 'header_with_secondary') { ?>
 	elseif(!empty($options['theme-skin']) && $options['theme-skin'] != 'ascend')  {
 		 get_template_part('includes/header-search');
 	} ?>
-	<div id="cta"><a class="booking" href="/shop/"> BOOK NOW</a></div>
+	
 	<header id="top">
 		
 		<div class="container">
@@ -216,17 +217,9 @@ if($using_secondary == 'header_with_secondary') { ?>
 						</ul>
 						
 					</nav>
-					<div id="socialm">
-						<a href="https://twitter.com/manatoursnz" target="_blank">
-						<img class="alignnone size-full wp-image-588" src="/wp-content/uploads/2015/05/twitter.png" alt="twitter"/></a>
-						<a href="https://www.facebook.com/pages/Mana-Tours-NZ/784501634937256?hc_location=ufi" target="_blank">
-							<img class="alignnone size-full wp-image-587" src="/wp-content/uploads/2015/05/facebook.png" alt="facebook"/></a>
-							<a href="https://www.youtube.com/channel/UCD2TIoe5KISQXeGOx0r8sqA" target="_blank">
-								<img class="alignnone size-full wp-image-591" src="/wp-content/uploads/2015/05/youtube.png" alt="youtube"/></a>
-								<a href="https://instagram.com/manatoursnz/" target="_blank">
-									<img class="alignnone size-full wp-image-590" src="/wp-content/uploads/2015/05/Instagram.png" alt="Instagram"/></a></div>
+					
 				</div><!--/span_9-->
-              
+			
 			</div><!--/row-->
 			
 		</div><!--/container-->
