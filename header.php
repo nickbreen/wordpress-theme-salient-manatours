@@ -141,6 +141,8 @@ if($using_secondary == 'header_with_secondary') { ?>
 		 get_template_part('includes/header-search');
 	} ?>
 	
+	<div id="cta"><a class="booking" href="/shop/">BOOK NOW</a></div>
+
 	<header id="top">
 		
 		<div class="container">
@@ -192,7 +194,7 @@ if($using_secondary == 'header_with_secondary') { ?>
 					if($sideWidgetArea == '1') { ?>
 						<div class="slide-out-widget-area-toggle">
 							<div> <a href="#sidewidgetarea" class="closed"> <i class="icon-reorder"></i> </a> </div> 
-       					</div>
+						</div>
 					<?php } ?>
 					
 					<nav>
@@ -202,7 +204,7 @@ if($using_secondary == 'header_with_secondary') { ?>
 							<?php if($sideWidgetArea == '1') { ?>
 								<li class="slide-out-widget-area-toggle">
 									<div> <a href="#sidewidgetarea" class="closed"> <span> <i class="lines-button x2"> <i class="lines"></i> </i> </span> </a> </div> 
-       							</li>
+								</li>
 							<?php } ?>
 						</ul>
 						<ul class="sf-menu">	
@@ -217,7 +219,14 @@ if($using_secondary == 'header_with_secondary') { ?>
 						</ul>
 						
 					</nav>
-					
+
+					<div id="socialm">
+						<a href="<?php echo $options['twitter-url'];   ?>"><?php echo wp_get_attachment_image(588, [24,24]); ?></a>
+						<a href="<?php echo $options['facebook-url'];  ?>"><?php echo wp_get_attachment_image(587, [24,24]); ?></a>
+						<a href="<?php echo $options['youtube-url'];   ?>"><?php echo wp_get_attachment_image(591, [24,24]); ?></a>
+						<a href="<?php echo $options['instagram-url']; ?>"><?php echo wp_get_attachment_image(590, [24,24]); ?></a>
+					</div>
+
 				</div><!--/span_9-->
 			
 			</div><!--/row-->
